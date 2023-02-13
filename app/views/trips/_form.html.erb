@@ -3,8 +3,12 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.name %>
-    <%= f.description %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :start_date, as: :string, input_html: { type: :date }, start_year: Date.today.year %>
+    <%= f.input :end_date,  as: :string, input_html: { type: :date }, start_year: Date.today.year %>
+    <%= f.input :city %>
+    <%= f.country_select :country %>
   </div>
 
   <div class="form-actions">

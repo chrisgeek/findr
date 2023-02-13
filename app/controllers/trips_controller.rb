@@ -1,12 +1,11 @@
 class TripsController < ApplicationController
   before_action :set_trip, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
-  # GET /trips or /trips.json
   def index
     @trips = current_user.trips
   end
 
-  # GET /trips/1 or /trips/1.json
   def show
   end
 
@@ -20,9 +19,12 @@ class TripsController < ApplicationController
   # POST /trips or /trips.json
   def create
     @trip = current_user.trips.new(trip_params)
-
+    get_weather_condition_service = GetWeatherConditionService.new(@trip)
+    @trip.weather_condition = get_weather_condition_service.get_weather
     respond_to do |format|
       if @trip.save
+        # get_weather_condition_service = GetWeatherConditionService.new
+        # get_weather_condition_service.check_weather(params['city'], params['country'], params['start_date'], params['end_date'])
         format.html { redirect_to trip_url(@trip), notice: "Trip was successfully created." }
         format.json { render :show, status: :created, location: @trip }
       else
@@ -32,7 +34,6 @@ class TripsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /trips/1 or /trips/1.json
   def update
     respond_to do |format|
       if @trip.update(trip_params)
@@ -60,6 +61,6 @@ class TripsController < ApplicationController
     end
 
     def trip_params
-      params.require(:trip).permit(:weather_condition, :start_date, :end_date, :city, :country)
+      params.require(:trip).permit(:name, :description, :user_id, :weather_condition, :start_date, :end_date, :city, :country)
     end
 end
