@@ -9,21 +9,22 @@ class GetWeatherConditionService
   end
 
   def get_weather
-    @api_key = 'FW52JTL9PV69PS23HD89XSN6B'
-    url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/#{@city}/#{@start_date}/#{@end_date}?key=#{@api_key}&include=days&elements=description"
-    http_request = HTTParty.get(url, headers: { 'Content-Type' => 'application/json' })
+    http_request = HTTParty.get(url_path, headers: { 'Content-Type' => 'application/json' })
     weather_conditions = http_request['days']
     dates = []
     (Date.strptime(@trip.start_date.to_s)..Date.strptime(@trip.end_date.to_s)).each { |d| dates << d }
-    @trip.weather_condition = weather_conditions.each { |d| d }
-    weather_conditions_h = {}
-    i = 0
-    while i < dates.count
-      weather_conditions_h[dates[i]] = weather_conditions[i]['description']
-      i = i + 1
-    end
-    weather_conditions_h
+    weather_condtions_and_dates(dates, weather_conditions)
     # byebug
-    # raise 'error'
+  end
+
+  def url_path
+    @api_key = 'FW52JTL9PV69PS23HD89XSN6B'
+    "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/#{@city}/#{@start_date}/#{@end_date}?key=#{@api_key}&include=days&elements=description"
+  end
+
+  def weather_condtions_and_dates(dates, weather_conditions)
+    weather_conditions.each_with_index do |w, i|
+      w['date'] = dates[i]
+    end
   end
 end

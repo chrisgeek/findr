@@ -1,0 +1,99 @@
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:214: warning: previous definition of BUFSIZE was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:541: warning: previous definition of Socket was here
+rake aborted!
+NoMethodError: undefined method `twenty_four_hours_from_now' for Trip (call 'Trip.connection' to establish a connection):Class
+/Users/ifeanyi/workspace/rails/findr/lib/tasks/weather_notification.rake:8:in `block (2 levels) in <main>'
+/Users/ifeanyi/.rbenv/versions/2.7.1/bin/bundle:23:in `load'
+/Users/ifeanyi/.rbenv/versions/2.7.1/bin/bundle:23:in `<main>'
+Tasks: TOP => weather_notification:trip
+(See full trace by running task with --trace)
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:214: warning: previous definition of BUFSIZE was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:541: warning: previous definition of Socket was here
+rake aborted!
+NoMethodError: undefined method `twenty_four_hours_from_now' for Trip (call 'Trip.connection' to establish a connection):Class
+/Users/ifeanyi/workspace/rails/findr/lib/tasks/weather_notification.rake:8:in `block (2 levels) in <main>'
+/Users/ifeanyi/.rbenv/versions/2.7.1/bin/bundle:23:in `load'
+/Users/ifeanyi/.rbenv/versions/2.7.1/bin/bundle:23:in `<main>'
+Tasks: TOP => weather_notification:trip
+(See full trace by running task with --trace)
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:214: warning: previous definition of BUFSIZE was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:541: warning: previous definition of Socket was here
+rake aborted!
+ActionView::Template::Error: undefined method `weather_condtion' for #<Trip:0x00007fd1029712d0>
+Did you mean?  weather_condition
+               weather_condition?
+               weather_condition=
+/Users/ifeanyi/workspace/rails/findr/app/views/trip_mailer/send_trip_notification_mail.html.erb:8:in `_app_views_trip_mailer_send_trip_notification_mail_html_erb___4566907149564012437_16640'
+/Users/ifeanyi/workspace/rails/findr/app/mailers/trip_mailer.rb:7:in `send_trip_notification_mail'
+/Users/ifeanyi/workspace/rails/findr/lib/tasks/weather_notification.rake:7:in `block (3 levels) in <main>'
+/Users/ifeanyi/workspace/rails/findr/lib/tasks/weather_notification.rake:4:in `block (2 levels) in <main>'
+/Users/ifeanyi/.rbenv/versions/2.7.1/bin/bundle:23:in `load'
+/Users/ifeanyi/.rbenv/versions/2.7.1/bin/bundle:23:in `<main>'
+
+Caused by:
+NoMethodError: undefined method `weather_condtion' for #<Trip:0x00007fd1029712d0>
+Did you mean?  weather_condition
+               weather_condition?
+               weather_condition=
+/Users/ifeanyi/workspace/rails/findr/app/views/trip_mailer/send_trip_notification_mail.html.erb:8:in `_app_views_trip_mailer_send_trip_notification_mail_html_erb___4566907149564012437_16640'
+/Users/ifeanyi/workspace/rails/findr/app/mailers/trip_mailer.rb:7:in `send_trip_notification_mail'
+/Users/ifeanyi/workspace/rails/findr/lib/tasks/weather_notification.rake:7:in `block (3 levels) in <main>'
+/Users/ifeanyi/workspace/rails/findr/lib/tasks/weather_notification.rake:4:in `block (2 levels) in <main>'
+/Users/ifeanyi/.rbenv/versions/2.7.1/bin/bundle:23:in `load'
+/Users/ifeanyi/.rbenv/versions/2.7.1/bin/bundle:23:in `<main>'
+Tasks: TOP => weather_notification:trip
+(See full trace by running task with --trace)
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:214: warning: previous definition of BUFSIZE was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:541: warning: previous definition of Socket was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:214: warning: previous definition of BUFSIZE was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:541: warning: previous definition of Socket was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:214: warning: previous definition of BUFSIZE was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:541: warning: previous definition of Socket was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:214: warning: previous definition of BUFSIZE was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:541: warning: previous definition of Socket was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:214: warning: previous definition of BUFSIZE was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:541: warning: previous definition of Socket was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:214: warning: previous definition of BUFSIZE was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:541: warning: previous definition of Socket was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:214: warning: previous definition of BUFSIZE was here
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/2.7.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/Users/ifeanyi/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/net-protocol-0.2.1/lib/net/protocol.rb:541: warning: previous definition of Socket was here

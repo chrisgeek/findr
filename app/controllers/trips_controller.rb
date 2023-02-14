@@ -23,8 +23,6 @@ class TripsController < ApplicationController
     @trip.weather_condition = get_weather_condition_service.get_weather
     respond_to do |format|
       if @trip.save
-        # get_weather_condition_service = GetWeatherConditionService.new
-        # get_weather_condition_service.check_weather(params['city'], params['country'], params['start_date'], params['end_date'])
         format.html { redirect_to trip_url(@trip), notice: "Trip was successfully created." }
         format.json { render :show, status: :created, location: @trip }
       else

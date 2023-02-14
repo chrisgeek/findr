@@ -1,0 +1,7 @@
+<h3>Weather Condition Update</h3>
+<ul>
+<% @trip.weather_condition.each do |weather| %>
+  <li><%= weather['date'] %> - <%= weather['description']%></li>
+<% end %>
+</ul>
+

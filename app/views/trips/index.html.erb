@@ -18,7 +18,9 @@
         Country: <td><%= trip.country %></td>
         Start Date: <td><%= trip.start_date %></td>
         End Date: <td><%= trip.end_date %></td>
-        Weather Condition <td><%= trip.weather_condition %></td>
+        Weather Condition <% trip.weather_condition.each do |w| %>
+        <td> <%= w['date'] %> - <%= w['description'] %><br> </td>
+        <% end %>
         <td><%= link_to 'Show', trip %></td>
         <td><%= link_to 'Edit', edit_trip_path(trip) %></td>
         <td><%= link_to 'Destroy', trip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
