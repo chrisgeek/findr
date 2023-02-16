@@ -10,6 +10,7 @@ gem 'country_select', '~> 8.0'
 gem 'devise'
 gem 'httparty', '~>0.18'
 gem 'pg', '>= 0.18', '< 2.0'
+gem 'rails-ujs'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets

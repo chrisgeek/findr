@@ -1,4 +1,28 @@
 <p id="notice"><%= notice %></p>
+<h1><%= @trip.name %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        Name: <td><%= @trip.name %></td>
+        Description: <td><%= @trip.description %></td>
+        City: <td><%= @trip.city %></td>
+        Country: <td><%= @trip.country %></td>
+        Start Date: <td><%= @trip.start_date %></td>
+        End Date: <td><%= @trip.end_date %></td>
+        Weather Condition <% @trip.weather_condition.each do |w| %>
+        <td> <%= w['date'] %> - <%= w['description'] %><br> </td>
+        <% end %>
+      </tr>
+  </tbody>
+</table>
+<br>
 
 <%= link_to 'Edit', edit_trip_path(@trip) %> |
 <%= link_to 'Back', trips_path %>
