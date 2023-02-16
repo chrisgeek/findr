@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Paris/2023-02-17/2023-02-19?elements=description&include=days&key=FW52JTL9PV69PS23HD89XSN6B
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 15 Feb 2023 14:20:40 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '202'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, no-transform
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Content-Type, X-Codingpedia
+      X-Powered-By:
+      - Visual Crossing Weather
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJxdWVyeUNvc3QiOjEsImxhdGl0dWRlIjo0OC44NTcyLCJsb25naXR1ZGUiOjIuMzQxNDEsInJlc29sdmVkQWRkcmVzcyI6IlBhcmlzLCDDjmxlLWRlLUZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6IlBhcmlzIiwidGltZXpvbmUiOiJFdXJvcGUvUGFyaXMiLCJ0em9mZnNldCI6MS4wLCJkYXlzIjpbeyJkZXNjcmlwdGlvbiI6IkNsb3VkeSBza2llcyB0aHJvdWdob3V0IHRoZSBkYXkuIn0seyJkZXNjcmlwdGlvbiI6IlBhcnRseSBjbG91ZHkgdGhyb3VnaG91dCB0aGUgZGF5LiJ9LHsiZGVzY3JpcHRpb24iOiJQYXJ0bHkgY2xvdWR5IHRocm91Z2hvdXQgdGhlIGRheS4ifV19
+  recorded_at: Wed, 15 Feb 2023 14:20:40 GMT
+recorded_with: VCR 6.1.0

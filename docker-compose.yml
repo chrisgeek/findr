@@ -2,16 +2,13 @@ version: '3'
 services:
   db:
     image: postgres
-    environment:
-      POSTGRES_PASSWORD: 'password1'
-      PGHOST: "db"
-      PGUSER: "postgres"
-      PGDBNAME: "findr"
+    ports: 
+      - "5432:5432"
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
   web:
     build: .
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'" 
+    command: bash -c "rm -f tmp/pids/server.pid && bundle install && yarn install --check-files && bundle exec rails s -p 3000 -b '0.0.0.0'"
     volumes:
       - .:/findr
     ports: 
